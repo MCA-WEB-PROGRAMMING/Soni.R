@@ -1,0 +1,29 @@
+body{
+    background:url("soni5.jpg");
+    background-repeat=no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-style: double;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: calc();
+    font-size: 30px;
+    margin-right: inherit;
+    background-size: cover;
+}
+table {
+    border-style:solid;
+    border-radius: 10px;
+    width: 50px;
+    font-size: 10px;
+    font-family: Georgia, serif;
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+}
+form{
+    background-color: rgba(17, 3, 3, 0.115);
+    border-radius: 30px;
+    padding:30px;
+    margin: 70px;
+}
+

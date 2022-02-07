@@ -1,0 +1,49 @@
+<html>
+    <head>
+       <link href="style1.css" rel="stylesheet">
+           <title>form</title>
+         <style>
+            table.center{
+                justify-content: center;
+            }            
+            h1{
+                text-align: center;
+                color:black;
+            }
+            input[type="submit"]:hover{
+                background-color: rgb(43, 226, 162);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1><u>Registration form</u></h1>
+
+        <form>
+            <center>
+           <table>
+              <tr><td>NAME:</td><td><input type="text" size="10" placeholder="enter your name" border="curved" autofocus="required" style="background-color:yellow;border-width: thick;></td></tr>
+                <tr><td>LAST NAME:</td><td><input type="text" size="10" autofocus="required" style="background-color: yellow; border-width: thick;"></td></tr>
+                   <tr><td>DOB:</td><td><input type="date" name="d" style="background-color:yellow;  border-width: thick;"></td></tr>
+                   <tr><td>ADDRESS:</td><td><textarea name="add" rows="10" cols="50" placeholder="must enter the pincode" style="background-color:yellow; border-width: thick;"></textarea></td></tr><tr><td></td></tr>
+                   <tr><td>E-MAIL:</td><td><input type="e-mail"name="n" placeholder="enter  your e-mail" style="background-color:yellow;"></td></tr>
+                   <tr><td>PASSWORD:</td><td><input type="passsword"name="f6" placeholder="enter your password" style="background-color:yellow; border-width: thick;"></td></tr>
+                   <tr><td>PHONE:</td><td><input type="phone number" name="t" placeholder="enter your phone number"  style="background-color:yellow ; border-width: thick;"></td></tr>
+                    <tr><td>GENDER:</td><td>MALE<input type="radio" id="html" name="g" value="MALE" style="background-color:yellow; border-width: thick;">
+                      FEMALE<input type="radio" id="html" name="g" value="FEMALE" style="background-color:yellow;"></td></tr>
+                       <tr><td>STATE:</td><td><select name="state" style="background-color:yellow; border-width: thick;">
+                           <option selected= value="default" style="background-color:yellow; border-width: thick;">please select a state</option>
+                           <option value="kerala">kerala</option>
+                           <option value="tamil nadu">tamil nadu</option>
+                           <option value="orissa">orissa</option>
+                       </select></td></tr>
+                       <tr><td>LANGUAGE KNOWN:</td><td><input type="checkbox" name="11" value="m" style="background-color:yellow; border-width: thick;">C++<br>
+                       <input type="checkbox"  name="12" value="m1">Java<br>
+                       <input type="checkbox"  name="13" value="m2">python<br></td></tr>
+                       <tr><td><input type="submit" name="s"  border-width: thick;"></td><td><input type="reset" name="r" style="background-color:yellow ;border-width: thick;"></td></tr>
+                
+                </table>
+                </center>
+           </form>
+           </body>
+           </html>
