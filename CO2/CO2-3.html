@@ -1,0 +1,67 @@
+<html>
+    <head>
+       
+        <title>validation form</title>
+        <script>
+            function submit(){
+            var name=document.getElementById("n").value;
+            var number=document.getElementById("num").value;
+            var password=document.getElementById("p").value;
+            var email=document.getElementById("e").value;
+            var pattern = /^[^ ]+@[^ ]+\$/;
+                if(name==null||name=="")
+                {
+                    alert("Name can't be blank");
+                    return false;
+                }
+                if(email.match(pattern))
+                {
+                    alert("email only contain letters,digits and patterns");
+                    return false;
+                }
+                if(number.length!=10)
+                {
+                    alert("please enter Valid mobile number")
+                    return false;
+                }
+   
+                if(password.length<6)
+                {
+                    alert("Password must be 6 character length");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+       
+        <center>
+            <h1>VALIDATION FORM</h1>
+                <table>
+                    <tr>
+                        <td>username:</td>
+                        <td><input type="text" name="name" id="n"></td>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <td><input type="e-mail" name="e-mail" id="e"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="mobile number" name="number" id="num"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB:</td>
+                        <td><input type="date" name="date" id="d"></td>
+                    </tr>
+                    <tr>
+                        <td>password:</td>
+                        <td><input type="password" name="password" id="p"></td>
+                    </tr>
+                    <tr>
+                        <td><button  id="con" onclick="submit()">SUBMIT</button></td>
+                    </tr>
+                </table>
+        </center>
+    </body>
+</html>
